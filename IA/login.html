@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Fruits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container flex-nav">
+            <h1 id="logo">Fruits</h1>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html" class="active btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container fade-in page-content">
+        <section class="form-section">
+            <h2>Acesse sua conta</h2>
+            <figure class="login-figure">
+                <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&w=800&q=80" alt="Pessoa utilizando smartphone">
+                <figcaption>Acesse o sistema Fruits pelo seu celular de forma rápida e segura.</figcaption>
+            </figure>
+            <form action="#" method="POST" class="contact-form">
+                <div class="input-group">
+                    <label for="user-email">E-mail:</label>
+                    <input type="email" id="user-email" name="user-email" placeholder="seu@email.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="user-password">Senha:</label>
+                    <input type="password" id="user-password" name="user-password" placeholder="********" required>
+                </div>
+                <button type="submit" class="btn-primary">Entrar</button>
+                <p style="margin-top: 15px; text-align: center;"><a href="#">Esqueci minha senha</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sistema Fruits - Quixeramobim, CE.</p>
+        </div>
+    </footer>
+</body>
+</html>
