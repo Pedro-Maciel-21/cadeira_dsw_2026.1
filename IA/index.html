@@ -1,76 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruits - Hortifrúti Natural em Quixeramobim</title>
+    <title>Fruits • Hortifrúti Natural</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- CABEÇALHO ORGÂNICO -->
-    <header class="main-header">
-        <div class="container flex-nav">
-            <h1 id="logo">Fruits</h1>
 
-            <nav aria-label="Navegação principal">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="login.html" class="btn-login">Login</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="container flex-nav">
+        <div id="logo">
+            <!-- Logo com emoji fallback caso imagem não exista -->
+            <div style="width:55px;height:55px;background:#CDE6C3;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;">🍎</div>
+            <h1>Fruits</h1>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <!-- HERO ORGÂNICO -->
-    <section id="hero" class="fade-in">
-        <div class="container hero-content">
-            <h2>Frescor que vem da natureza para a sua mesa.</h2>
-            <p>Frutas, legumes e verduras selecionadas diariamente de produtores locais de Quixeramobim.</p>
-            <a href="produtos.html" class="btn-primary">Ver Catálogo</a>
-        </div>
-    </section>
+<section id="hero">
+    <h2>Frescor direto da terra para sua mesa</h2>
+    <p>Frutas, verduras e produtos selecionados com carinho.</p>
+    <a href="produtos.html" class="button-primary">Ver catálogo</a>
+</section>
 
-    <main class="container fade-in">
-
-        <!-- CARDS ORGÂNICOS DE BENEFÍCIOS -->
+<main>
+    <div class="container">
         <section class="features">
-            <article class="feature-card">
-                <h3>Frescura Natural</h3>
-                <p>Selecionamos cada produto com carinho para garantir qualidade e sabor real.</p>
-            </article>
-
-            <article class="feature-card">
-                <h3>Entrega Rápida</h3>
-                <p>Receba tudo fresquinho na porta da sua casa no mesmo dia.</p>
-            </article>
-
-            <article class="feature-card">
-                <h3>Apoio ao Produtor</h3>
-                <p>Trabalhamos diretamente com agricultores locais que valorizam cultivo orgânico.</p>
-            </article>
+            <div class="card">
+                <h3>🍎 Produtos Naturais</h3>
+                <p>Itens frescos, selecionados diariamente para garantir qualidade.</p>
+            </div>
+            <div class="card">
+                <h3>🚚 Entrega Rápida</h3>
+                <p>Levamos saúde e sabor até você com agilidade.</p>
+            </div>
+            <div class="card">
+                <h3>💚 Atendimento de Qualidade</h3>
+                <p>Estamos sempre prontos para ajudar no que precisar.</p>
+            </div>
         </section>
+    </div>
+</main>
 
-        <!-- IMAGEM ORGÂNICA -->
-        <section class="image-showcase fade-in">
-            <figure>
-                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80"
-                     alt="Cestas de frutas e verduras frescas em uma feira natural">
-                <figcaption>Da terra direto para a sua casa.</figcaption>
-            </figure>
-        </section>
-
-    </main>
-
-    <!-- RODAPÉ ORGÂNICO -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Fruits - Hortifrúti Natural em Quixeramobim.</p>
-        </div>
-    </footer>
+<footer>
+    <p>© 2025 Fruits • Hortifrúti Natural</p>
+</footer>
 
 </body>
 </html>

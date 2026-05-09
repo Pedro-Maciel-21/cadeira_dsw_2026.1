@@ -1,115 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Produtos - Fruits</title>
+    <title>Produtos • Fruits</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- CABEÇALHO ORGÂNICO -->
-    <header class="main-header">
-        <div class="container flex-nav">
-            <h1 id="logo">Fruits</h1>
-
-            <nav aria-label="Navegação principal">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="produtos.html" class="active">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="login.html" class="btn-login">Login</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="container flex-nav">
+        <div id="logo">
+            <div style="width:55px;height:55px;background:#CDE6C3;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;">🍎</div>
+            <h1>Fruits</h1>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html" class="active">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="container fade-in page-content">
-
-        <section>
-            <h2>Catálogo Natural</h2>
-            <p style="margin-top: 10px;">
-                Aqui você encontra frutas, legumes e verduras fresquinhos, selecionados diariamente.
-                Escolha seus produtos preferidos e receba tudo com qualidade direto da natureza.
-            </p>
-
-            <!-- GRID ORGÂNICO DE PRODUTOS -->
-            <div class="catalog-grid">
-
-                <!-- PRODUTO 1 -->
-                <article class="product-card">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=900&q=80"
-                             alt="Cacho de bananas frescas">
-                        <figcaption>Banana Prata – R$ 5,00/kg</figcaption>
-                    </figure>
-                    <button class="btn-primary">Adicionar ao Carrinho</button>
-                </article>
-
-                <!-- PRODUTO 2 -->
-                <article class="product-card">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=80"
-                             alt="Batatas inglesas frescas">
-                        <figcaption>Batata Inglesa – R$ 6,50/kg</figcaption>
-                    </figure>
-                    <button class="btn-primary">Adicionar ao Carrinho</button>
-                </article>
-
-                <!-- PRODUTO 3 -->
-                <article class="product-card">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=900&q=80"
-                             alt="Tomates maduros e suculentos">
-                        <figcaption>Tomate – R$ 7,00/kg</figcaption>
-                    </figure>
-                    <button class="btn-primary">Adicionar ao Carrinho</button>
-                </article>
-
-                <!-- PRODUTO 4 -->
-                <article class="product-card">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1574226516831-e1dff420e43e?auto=format&fit=crop&w=900&q=80"
-                             alt="Cenouras frescas recém colhidas">
-                        <figcaption>Cenoura – R$ 4,50/kg</figcaption>
-                    </figure>
-                    <button class="btn-primary">Adicionar ao Carrinho</button>
-                </article>
-
-                <!-- PRODUTO 5 -->
-                <article class="product-card">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1579684453423-4f7a5b0ca2cf?auto=format&fit=crop&w=900&q=80"
-                             alt="Maçãs vermelhas e naturais">
-                        <figcaption>Maçã Nacional – R$ 9,00/kg</figcaption>
-                    </figure>
-                    <button class="btn-primary">Adicionar ao Carrinho</button>
-                </article>
-
-                <!-- PRODUTO 6 -->
-                <article class="product-card">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1582515073490-39981397c445?auto=format&fit=crop&w=900&q=80"
-                             alt="Folhas de alface orgânica">
-                        <figcaption>Alface Crespa – R$ 3,00/unidade</figcaption>
-                    </figure>
-                    <button class="btn-primary">Adicionar ao Carrinho</button>
-                </article>
-
+<main>
+    <div class="container">
+        <h2 class="page-title">Catálogo de Produtos</h2>
+        
+        <section class="catalogo">
+            <div class="produto">
+                <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Maçãs frescas">
+                <h3>🍎 Maçãs Frescas</h3>
+                <p>Doces e crocantes, direto do pomar.</p>
+            </div>
+            <div class="produto">
+                <img src="https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFuYW5hfGVufDB8fDB8fHww" alt="Bananas orgânicas">
+                <h3>🍌 Bananas Orgânicas</h3>
+                <p>Fonte natural de energia e potássio.</p>
+            </div>
+            <div class="produto">
+                <img src="https://images.unsplash.com/photo-1582284540020-8acbe03f4924?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG9tYXRlfGVufDB8fDB8fHww" alt="Tomates vermelhos">
+                <h3>🍅 Tomates Vermelhos</h3>
+                <p>Ideais para saladas e molhos.</p>
             </div>
         </section>
+    </div>
+</main>
 
-    </main>
-
-    <!-- RODAPÉ ORGÂNICO -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Fruits - Hortifrúti Natural em Quixeramobim.</p>
-        </div>
-    </footer>
+<footer>
+    <p>© 2025 Fruits • Hortifrúti Natural</p>
+</footer>
 
 </body>
 </html>

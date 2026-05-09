@@ -1,75 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Fruits</title>
+    <title>Contato • Fruits</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- CABEÇALHO ORGÂNICO -->
-    <header class="main-header">
-        <div class="container flex-nav">
-            <h1 id="logo">Fruits</h1>
-
-            <nav aria-label="Navegação principal">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html" class="active">Contato</a></li>
-                    <li><a href="login.html" class="btn-login">Login</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="container flex-nav">
+        <div id="logo">
+            <div style="width:55px;height:55px;background:#CDE6C3;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;">🍎</div>
+            <h1>Fruits</h1>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="container fade-in page-content">
+<main>
+    <div class="container">
+        <h2 class="page-title">Fale Conosco</h2>
+        
+        <form class="formulario" onsubmit="alert('Mensagem enviada com sucesso! (Demonstração)'); return false;">
+            <label>📝 Nome:</label>
+            <input type="text" placeholder="Digite seu nome" required>
+            
+            <label>📧 Email:</label>
+            <input type="email" placeholder="Digite seu email" required>
+            
+            <label>💬 Mensagem:</label>
+            <textarea rows="5" placeholder="Digite sua mensagem" required></textarea>
+            
+            <button type="submit" class="button-primary" style="width:100%">Enviar</button>
+        </form>
+    </div>
+</main>
 
-        <section class="form-section">
-            <h2>Fale Conosco</h2>
-            <p style="margin-top: 8px;">
-                Estamos aqui para ajudar! Caso tenha dúvidas sobre entregas, produtos, pagamentos ou queira apenas mandar um feedback,
-                nossa equipe terá prazer em responder.
-            </p>
-
-            <figure class="contact-figure" style="margin-top: 25px;">
-                <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?auto=format&fit=crop&w=1200&q=80"
-                     alt="Mesa com caderno, telefone e elementos naturais">
-                <figcaption>Envie sua mensagem — responderemos o mais rápido possível!</figcaption>
-            </figure>
-
-            <form action="#" method="POST" class="contact-form" style="margin-top: 20px;">
-                <div class="input-group">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
-                </div>
-
-                <button type="submit" class="btn-primary">Enviar Mensagem</button>
-            </form>
-        </section>
-
-    </main>
-
-    <!-- RODAPÉ ORGÂNICO -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Fruits - Hortifrúti Natural em Quixeramobim.</p>
-        </div>
-    </footer>
+<footer>
+    <p>© 2025 Fruits • Hortifrúti Natural</p>
+</footer>
 
 </body>
 </html>

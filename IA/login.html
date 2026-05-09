@@ -1,74 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Fruits</title>
+    <title>Login • Fruits</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- CABEÇALHO ORGÂNICO -->
-    <header class="main-header">
-        <div class="container flex-nav">
-            <h1 id="logo">Fruits</h1>
-
-            <nav aria-label="Navegação principal">
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="login.html" class="active btn-login">Login</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="container flex-nav">
+        <div id="logo">
+            <div style="width:55px;height:55px;background:#CDE6C3;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;">🍎</div>
+            <h1>Fruits</h1>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" class="active btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="container fade-in page-content">
+<main>
+    <div class="container">
+        <h2 class="page-title">Acessar Conta</h2>
+        
+        <form class="formulario" onsubmit="alert('Demonstração: login seria processado aqui!'); return false;">
+            <label>📧 Email:</label>
+            <input type="email" placeholder="Digite seu email" required>
+            
+            <label>🔒 Senha:</label>
+            <input type="password" placeholder="Digite sua senha" required>
+            
+            <button type="submit" class="button-primary" style="width:100%">Entrar</button>
+        </form>
+    </div>
+</main>
 
-        <section class="form-section">
-            <h2>Acesse sua conta</h2>
-            <p style="margin-top: 6px;">
-                Entre para acompanhar pedidos, atualizar informações e aproveitar ainda mais o Fruits.
-            </p>
-
-            <figure class="login-figure" style="margin-top: 25px;">
-                <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&w=1200&q=80"
-                     alt="Pessoa usando o celular de forma natural">
-                <figcaption>Acesse sua conta com praticidade e segurança.</figcaption>
-            </figure>
-
-            <form action="#" method="POST" class="contact-form" style="margin-top: 20px;">
-
-                <div class="input-group">
-                    <label for="user-email">E-mail:</label>
-                    <input type="email" id="user-email" name="user-email" placeholder="seu@email.com" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="user-password">Senha:</label>
-                    <input type="password" id="user-password" name="user-password" placeholder="********" required>
-                </div>
-
-                <button type="submit" class="btn-primary">Entrar</button>
-
-                <p style="margin-top: 18px; text-align: center;">
-                    <a href="#" style="color: var(--primary-color); font-weight: 600;">Esqueci minha senha</a>
-                </p>
-            </form>
-        </section>
-
-    </main>
-
-    <!-- RODAPÉ ORGÂNICO -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Fruits - Hortifrúti Natural em Quixeramobim.</p>
-        </div>
-    </footer>
+<footer>
+    <p>© 2025 Fruits • Hortifrúti Natural</p>
+</footer>
 
 </body>
 </html>
