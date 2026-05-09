@@ -6,10 +6,14 @@
     <title>Login - Fruits</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- CABEÇALHO ORGÂNICO -->
     <header class="main-header">
         <div class="container flex-nav">
             <h1 id="logo">Fruits</h1>
+
             <nav aria-label="Navegação principal">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
@@ -22,32 +26,49 @@
         </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="container fade-in page-content">
+
         <section class="form-section">
             <h2>Acesse sua conta</h2>
-            <figure class="login-figure">
-                <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&w=800&q=80" alt="Pessoa utilizando smartphone">
-                <figcaption>Acesse o sistema Fruits pelo seu celular de forma rápida e segura.</figcaption>
+            <p style="margin-top: 6px;">
+                Entre para acompanhar pedidos, atualizar informações e aproveitar ainda mais o Fruits.
+            </p>
+
+            <figure class="login-figure" style="margin-top: 25px;">
+                <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?auto=format&fit=crop&w=1200&q=80"
+                     alt="Pessoa usando o celular de forma natural">
+                <figcaption>Acesse sua conta com praticidade e segurança.</figcaption>
             </figure>
-            <form action="#" method="POST" class="contact-form">
+
+            <form action="#" method="POST" class="contact-form" style="margin-top: 20px;">
+
                 <div class="input-group">
                     <label for="user-email">E-mail:</label>
                     <input type="email" id="user-email" name="user-email" placeholder="seu@email.com" required>
                 </div>
+
                 <div class="input-group">
                     <label for="user-password">Senha:</label>
                     <input type="password" id="user-password" name="user-password" placeholder="********" required>
                 </div>
+
                 <button type="submit" class="btn-primary">Entrar</button>
-                <p style="margin-top: 15px; text-align: center;"><a href="#">Esqueci minha senha</a></p>
+
+                <p style="margin-top: 18px; text-align: center;">
+                    <a href="#" style="color: var(--primary-color); font-weight: 600;">Esqueci minha senha</a>
+                </p>
             </form>
         </section>
+
     </main>
 
+    <!-- RODAPÉ ORGÂNICO -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Sistema Fruits - Quixeramobim, CE.</p>
+            <p>&copy; 2026 Fruits - Hortifrúti Natural em Quixeramobim.</p>
         </div>
     </footer>
+
 </body>
 </html>
