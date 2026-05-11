@@ -372,7 +372,7 @@ figcaption {
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: var(--sombra-leve);
-    width: calc(33.333% - 20px);
+    width: calc(50% - 20px);
     min-width: 280px;
 }
 
